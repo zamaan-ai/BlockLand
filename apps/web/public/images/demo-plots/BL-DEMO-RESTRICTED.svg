@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-label="Illustrative demo land parcel">
+  <defs>
+    <linearGradient id="ground" x2=".7" y2="1"><stop stop-color="#89966e"/><stop offset=".52" stop-color="#c4b684"/><stop offset="1" stop-color="#718d70"/></linearGradient>
+    <pattern id="rows" width="60" height="60" patternTransform="rotate(-38)" patternUnits="userSpaceOnUse"><path d="M0 8h60M0 36h60" stroke="#f5eac0" stroke-opacity=".31" stroke-width="8"/></pattern>
+  </defs>
+  <rect width="960" height="480" fill="url(#ground)"/><rect width="960" height="480" fill="url(#rows)"/>
+  <path d="M-20 334 980 76v60L-20 396z" fill="#bdb8a4"/><path d="M-20 362 980 104" stroke="#fff9e8" stroke-width="8"/>
+  <path d="m293 57 386 20 42 291-414 5z" fill="#b6c990" fill-opacity=".4" stroke="#fff8d5" stroke-width="7" stroke-dasharray="18 10"/>
+  <g fill="#536e4e" opacity=".78"><circle cx="83" cy="92" r="34"/><circle cx="137" cy="105" r="23"/><circle cx="822" cy="365" r="37"/><circle cx="883" cy="379" r="25"/></g>
+  <rect x="32" y="32" width="240" height="34" rx="17" fill="#13231edb"/><text x="52" y="55" fill="#fff" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">ILLUSTRATIVE DEMO LAND</text>
+</svg>

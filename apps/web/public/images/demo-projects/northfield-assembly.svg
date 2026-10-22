@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Illustrative low-rise workplace campus project">
+  <defs>
+    <linearGradient id="sky" y2="1"><stop stop-color="#a6c0b4"/><stop offset="1" stop-color="#e1d7b6"/></linearGradient>
+    <linearGradient id="field" y2="1"><stop stop-color="#91a678"/><stop offset="1" stop-color="#526f58"/></linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <circle cx="945" cy="142" r="65" fill="#f1d796" opacity=".85"/>
+  <path d="M0 370q204-108 412-20t380-5 408-5v360H0z" fill="url(#field)"/>
+  <path d="M0 480q202-86 392 7t401 0 407-22v235H0z" fill="#63815e"/>
+  <g stroke="#e9e1c6" stroke-width="8">
+    <path d="M171 300h252v176H171z" fill="#687f79"/><path d="M463 269h287v206H463z" fill="#536f6c"/><path d="M785 320h226v157H785z" fill="#718981"/>
+  </g>
+  <g stroke="#dae2d6" stroke-width="5"><path d="M205 342h183m-183 39h183m-183 39h183"/><path d="M502 311h208m-208 41h208m-208 41h208m-208 41h208"/><path d="M817 359h161m-161 39h161"/></g>
+  <g fill="#f1d796"><rect x="225" y="321" width="24" height="19"/><rect x="276" y="321" width="24" height="19"/><rect x="327" y="321" width="24" height="19"/><rect x="535" y="290" width="24" height="19"/><rect x="586" y="290" width="24" height="19"/><rect x="637" y="290" width="24" height="19"/><rect x="852" y="340" width="24" height="19"/><rect x="904" y="340" width="24" height="19"/></g>
+  <path d="M0 568q282-72 553 9t647-26" fill="none" stroke="#d0c59d" stroke-width="20"/>
+  <rect x="34" y="34" width="290" height="42" rx="21" fill="#20362ed9"/><text x="58" y="61" fill="#fff" font-family="Arial,sans-serif" font-size="17" letter-spacing="2">ILLUSTRATIVE PROJECT IMAGE</text>
+</svg>
