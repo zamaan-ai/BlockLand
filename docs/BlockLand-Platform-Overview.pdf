@@ -1,0 +1,393 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 4694 >>
+stream
+1 w 1.000 1.000 1.000 rg 0.0 0.0 595.0 842.0 re f
+BT /F2 11 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 801.0 Tm (BLOCKLAND) Tj ET
+0.780 0.940 0.200 rg 116.0 805.0 m 116.0 807.8 113.8 810.0 111.0 810.0 c 108.2 810.0 106.0 807.8 106.0 805.0 c 106.0 802.2 108.2 800.0 111.0 800.0 c 113.8 800.0 116.0 802.2 116.0 805.0 c f
+BT /F2 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 360.0 802.5 Tm (PLATFORM OVERVIEW  /  08 OCT 2026) Tj ET
+1 w 0.880 0.900 0.920 RG 40.0 784.0 m 555.0 784.0 l S
+1 w 0.055 0.075 0.110 rg 38.0 475.0 519.0 285.0 re f
+1 w 0.780 0.940 0.200 rg 38.0 475.0 6.0 285.0 re f
+BT /F2 8.5 Tf 0.780 0.940 0.200 rg 1 0 0 1 62.0 726.5 Tm (LAND REGISTRY, DISCOVERY & WORKFLOW) Tj ET
+BT /F2 31 Tf 1.000 1.000 1.000 rg 1 0 0 1 62.0 671.0 Tm (Know the ground) Tj ET
+BT /F2 31 Tf 1.000 1.000 1.000 rg 1 0 0 1 62.0 633.0 Tm (you stand on.) Tj ET
+BT /F1 12 Tf 0.840 0.880 0.910 rg 1 0 0 1 62.0 602.0 Tm (A responsive land-discovery experience connected to a live API-backed) Tj ET
+BT /F1 12 Tf 0.840 0.880 0.910 rg 1 0 0 1 62.0 584.0 Tm (registry, with mapped parcels, public verification reports, role-specific) Tj ET
+BT /F1 12 Tf 0.840 0.880 0.910 rg 1 0 0 1 62.0 566.0 Tm (dashboards, and transfer-review workflows.) Tj ET
+0.8 w 0.220 0.270 0.320 RG 62.0 520.0 m 528.0 520.0 l S
+BT /F2 7.2 Tf 0.770 0.820 0.870 rg 1 0 0 1 62.0 497.8 Tm (LOCAL DEMONSTRATION  |  LIVE DATA CONNECTION  |  NOT A PRODUCTION LAND AUTHORITY) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 38.0 382.0 124.0 75.0 re B
+BT /F2 7.2 Tf 0.340 0.400 0.470 rg 1 0 0 1 50.0 438.8 Tm (REGISTRY PARCELS) Tj ET
+BT /F2 18 Tf 0.060 0.090 0.130 rg 1 0 0 1 50.0 412.0 Tm (5) Tj ET
+BT /F1 7.6 Tf 0.340 0.400 0.470 rg 1 0 0 1 50.0 399.4 Tm (Current API response) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 170.0 382.0 124.0 75.0 re B
+BT /F2 7.2 Tf 0.340 0.400 0.470 rg 1 0 0 1 182.0 438.8 Tm (MAP LOCATIONS) Tj ET
+BT /F2 18 Tf 0.060 0.090 0.130 rg 1 0 0 1 182.0 412.0 Tm (3 of 5) Tj ET
+BT /F1 7.6 Tf 0.340 0.400 0.470 rg 1 0 0 1 182.0 399.4 Tm (Coordinates present) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 302.0 382.0 124.0 75.0 re B
+BT /F2 7.2 Tf 0.340 0.400 0.470 rg 1 0 0 1 314.0 438.8 Tm (PROJECTS) Tj ET
+BT /F2 18 Tf 0.060 0.090 0.130 rg 1 0 0 1 314.0 412.0 Tm (2) Tj ET
+BT /F1 7.6 Tf 0.340 0.400 0.470 rg 1 0 0 1 314.0 399.4 Tm (Current API response) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 434.0 382.0 123.0 75.0 re B
+BT /F2 7.2 Tf 0.340 0.400 0.470 rg 1 0 0 1 446.0 438.8 Tm (API HEALTH) Tj ET
+BT /F2 18 Tf 0.060 0.090 0.130 rg 1 0 0 1 446.0 412.0 Tm (OK) Tj ET
+BT /F1 7.6 Tf 0.340 0.400 0.470 rg 1 0 0 1 446.0 399.4 Tm (Responding on port 4001) Tj ET
+BT /F2 9 Tf 0.050 0.480 0.310 rg 1 0 0 1 40.0 351.0 Tm (EXECUTIVE OVERVIEW) Tj ET
+BT /F2 18 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 321.0 Tm (A prototype with meaningful live slices) Tj ET
+BT /F1 9.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 300.5 Tm (BlockLand combines a Next.js interface, an Express/TypeScript) Tj ET
+BT /F1 9.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 286.5 Tm (API, PostgreSQL data accessed through Prisma, an optional) Tj ET
+BT /F1 9.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 272.5 Tm (Redis/BullMQ layer, and a Solidity ERC-721 registry contract. The) Tj ET
+BT /F1 9.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 258.5 Tm (public homepage now reads parcel data from the API and refreshes) Tj ET
+BT /F1 9.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 244.5 Tm (it automatically.) Tj ET
+0.8 w 0.960 0.970 0.980 rg 0.880 0.900 0.920 RG 380.0 189.0 177.0 131.0 re B
+BT /F2 8 Tf 0.050 0.480 0.310 rg 1 0 0 1 394.0 298.0 Tm (CURRENT LIVE STATUS) Tj ET
+BT /F1 8.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 394.0 277.9 Tm (Web: http://localhost:3200) Tj ET
+BT /F1 8.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 394.0 262.9 Tm (API health:) Tj ET
+BT /F1 8.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 394.0 247.9 Tm (http://localhost:4001/health) Tj ET
+BT /F1 8.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 394.0 232.9 Tm (Map refresh: every 60 seconds) Tj ET
+BT /F1 8.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 394.0 217.9 Tm (Dataset: illustrative demo records) Tj ET
+BT /F2 8 Tf 0.690 0.430 0.060 rg 1 0 0 1 40.0 159.0 Tm (IMPORTANT CONTEXT) Tj ET
+BT /F1 9.2 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 140.8 Tm (Live connection means the UI reads the running local database/API; the current records are demonstration) Tj ET
+BT /F1 9.2 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 126.8 Tm (data, not proof of legal ownership, government endorsement, or a production title service.) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 34.0 m 557.0 34.0 l S
+BT /F2 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 17.5 Tm (BLOCKLAND  |  PLATFORM OVERVIEW  |  08 OCTOBER 2026) Tj ET
+BT /F2 8 Tf 0.340 0.400 0.470 rg 1 0 0 1 529.0 17.0 Tm (01) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 6015 >>
+stream
+BT /F2 10 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 807.0 Tm (BLOCKLAND) Tj ET
+0.780 0.940 0.200 rg 112.0 811.0 m 112.0 813.2 110.2 815.0 108.0 815.0 c 105.8 815.0 104.0 813.2 104.0 811.0 c 104.0 808.8 105.8 807.0 108.0 807.0 c 110.2 807.0 112.0 808.8 112.0 811.0 c f
+BT /F2 7.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 352.0 807.6 Tm (PRODUCT & TECHNICAL BRIEF  /  08 OCT 2026) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 790.0 m 557.0 790.0 l S
+BT /F2 25 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 745.0 Tm (Product experience) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 724.7 Tm (The public-facing experience is designed around discoverability first: find a parcel, understand) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 710.0 Tm (its registry signals, inspect location and history, then take an informed next step.) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 34.0 m 557.0 34.0 l S
+BT /F2 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 17.5 Tm (BLOCKLAND  |  PLATFORM OVERVIEW  |  08 OCTOBER 2026) Tj ET
+BT /F2 8 Tf 0.340 0.400 0.470 rg 1 0 0 1 529.0 17.0 Tm (02) Tj ET
+BT /F2 14 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 677.6 Tm (Public discovery journey) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 40.0 568.6 122.0 101.0 re B
+BT /F2 7.1 Tf 0.050 0.480 0.310 rg 1 0 0 1 50.0 650.5 Tm (01  SEARCH) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 50.0 630.2 Tm (Search by place, plot) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 50.0 618.2 Tm (ID, city, or landmark.) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 171.0 568.6 122.0 101.0 re B
+BT /F2 7.1 Tf 0.050 0.480 0.310 rg 1 0 0 1 181.0 650.5 Tm (02  EXPLORE) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 181.0 630.2 Tm (Browse live parcel) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 181.0 618.2 Tm (cards and projects.) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 302.0 568.6 122.0 101.0 re B
+BT /F2 7.1 Tf 0.050 0.480 0.310 rg 1 0 0 1 312.0 650.5 Tm (03  INSPECT) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 312.0 630.2 Tm (Review status,) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 312.0 618.2 Tm (location, and a public) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 312.0 606.2 Tm (verification report.) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 433.0 568.6 122.0 101.0 re B
+BT /F2 7.1 Tf 0.050 0.480 0.310 rg 1 0 0 1 443.0 650.5 Tm (04  ENGAGE) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 443.0 630.2 Tm (Save a parcel, request) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 443.0 618.2 Tm (a visit, or open) Tj ET
+BT /F1 8.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 443.0 606.2 Tm (directions.) Tj ET
+BT /F2 14 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 536.6 Tm (What a visitor can inspect) Tj ET
+0.050 0.480 0.310 rg 51.1 521.6 m 51.1 522.8 50.2 523.7 49.0 523.7 c 47.8 523.7 46.9 522.8 46.9 521.6 c 46.9 520.4 47.8 519.5 49.0 519.5 c 50.2 519.5 51.1 520.4 51.1 521.6 c f
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 519.5 Tm (Registry status and parcel identifiers, including pending, verified, transferred, locked-for-sale,) Tj ET
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 506.5 Tm (disputed, and under-review states.) Tj ET
+0.050 0.480 0.310 rg 51.1 490.6 m 51.1 491.7 50.2 492.7 49.0 492.7 c 47.8 492.7 46.9 491.7 46.9 490.6 c 46.9 489.4 47.8 488.5 49.0 488.5 c 50.2 488.5 51.1 489.4 51.1 490.6 c f
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 488.5 Tm (Map position when latitude/longitude is present; a missing coordinate is shown as unavailable rather) Tj ET
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 475.5 Tm (than guessed.) Tj ET
+0.050 0.480 0.310 rg 51.1 459.5 m 51.1 460.7 50.2 461.6 49.0 461.6 c 47.8 461.6 46.9 460.7 46.9 459.5 c 46.9 458.4 47.8 457.4 49.0 457.4 c 50.2 457.4 51.1 458.4 51.1 459.5 c f
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 457.4 Tm (Public verification report covering owner identity signals, government verification, blockchain) Tj ET
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 444.4 Tm (reference, active transfers, encumbrances, disputes, and ownership history.) Tj ET
+0.050 0.480 0.310 rg 51.1 428.5 m 51.1 429.7 50.2 430.6 49.0 430.6 c 47.8 430.6 46.9 429.7 46.9 428.5 c 46.9 427.4 47.8 426.4 49.0 426.4 c 50.2 426.4 51.1 427.4 51.1 428.5 c f
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 426.4 Tm (Location discovery tools: map search, basemap changes, current-location control, route display, and) Tj ET
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 413.4 Tm (Street View links where external services permit.) Tj ET
+0.050 0.480 0.310 rg 51.1 397.5 m 51.1 398.7 50.2 399.6 49.0 399.6 c 47.8 399.6 46.9 398.7 46.9 397.5 c 46.9 396.3 47.8 395.4 49.0 395.4 c 50.2 395.4 51.1 396.3 51.1 397.5 c f
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 395.4 Tm (Project, builder, review, saved-item, dealer-contact, and site-visit interface surfaces; some are) Tj ET
+BT /F1 9.1 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 382.4 Tm (demonstration or partial-backend flows.) Tj ET
+BT /F2 14 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 355.5 Tm (Current experience notes) Tj ET
+0.8 w 0.960 0.970 0.980 rg 0.880 0.900 0.920 RG 40.0 243.5 515.0 104.0 re B
+BT /F1 9.2 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 325.3 Tm (The homepage is a responsive HTML/JavaScript product shell mounted by the Next.js home route. Leaflet) Tj ET
+BT /F1 9.2 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 311.3 Tm (renders the map; live parcel cards are constructed from the API response. The current sample dataset) Tj ET
+BT /F1 9.2 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 297.3 Tm (has 5 parcel records, 2 projects, and 3 geolocated parcels.) Tj ET
+BT /F1 8.5 Tf 0.690 0.430 0.060 rg 1 0 0 1 54.0 271.0 Tm (A demo-data disclaimer is shown in the page footer: the records are illustrative and are not evidence of legal) Tj ET
+BT /F1 8.5 Tf 0.690 0.430 0.060 rg 1 0 0 1 54.0 259.0 Tm (title or government endorsement.) Tj ET
+BT /F1 7.1 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 218.4 Tm (Primary files: apps/web/src/app/page.tsx  |  apps/web/public/mark2-body.html  |  apps/web/public/mark2-app.js) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 6140 >>
+stream
+BT /F2 10 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 807.0 Tm (BLOCKLAND) Tj ET
+0.780 0.940 0.200 rg 112.0 811.0 m 112.0 813.2 110.2 815.0 108.0 815.0 c 105.8 815.0 104.0 813.2 104.0 811.0 c 104.0 808.8 105.8 807.0 108.0 807.0 c 110.2 807.0 112.0 808.8 112.0 811.0 c f
+BT /F2 7.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 352.0 807.6 Tm (PRODUCT & TECHNICAL BRIEF  /  08 OCT 2026) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 790.0 m 557.0 790.0 l S
+BT /F2 25 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 745.0 Tm (Integrated live map) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 724.7 Tm (The map is now registry-backed rather than a standalone static illustration. Its status and) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 710.0 Tm (parcel list reflect the local API response, with refresh and coordinate handling made visible to) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 695.3 Tm (the user.) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 34.0 m 557.0 34.0 l S
+BT /F2 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 17.5 Tm (BLOCKLAND  |  PLATFORM OVERVIEW  |  08 OCTOBER 2026) Tj ET
+BT /F2 8 Tf 0.340 0.400 0.470 rg 1 0 0 1 529.0 17.0 Tm (03) Tj ET
+0.8 w 0.940 0.970 0.910 rg 0.880 0.900 0.920 RG 40.0 599.9 515.0 77.0 re B
+BT /F2 7.5 Tf 0.050 0.480 0.310 rg 1 0 0 1 55.0 657.4 Tm (LIVE SNAPSHOT) Tj ET
+BT /F2 10 Tf 0.060 0.090 0.130 rg 1 0 0 1 55.0 637.9 Tm (5 parcels  /  3 map pins  /  2 records missing coordinates  /  refreshed every 60 seconds) Tj ET
+BT /F1 7.6 Tf 0.340 0.400 0.470 rg 1 0 0 1 55.0 620.3 Tm (Observed while preparing this report; totals and statuses can change as the database changes.) Tj ET
+BT /F2 14 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 566.9 Tm (Data path) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 40.0 488.9 122.0 70.0 re B
+BT /F2 7.2 Tf 0.050 0.480 0.310 rg 1 0 0 1 49.0 541.7 Tm (API) Tj ET
+BT /F1 8.1 Tf 0.340 0.400 0.470 rg 1 0 0 1 49.0 523.8 Tm (GET /api/v1/lands) Tj ET
+BT /F2 10 Tf 0.050 0.480 0.310 rg 1 0 0 1 163.0 521.9 Tm (>) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 170.0 488.9 122.0 70.0 re B
+BT /F2 7.2 Tf 0.050 0.480 0.310 rg 1 0 0 1 179.0 541.7 Tm (NORMALIZE) Tj ET
+BT /F1 8.1 Tf 0.340 0.400 0.470 rg 1 0 0 1 179.0 523.8 Tm (status, labels, location) Tj ET
+BT /F2 10 Tf 0.050 0.480 0.310 rg 1 0 0 1 293.0 521.9 Tm (>) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 300.0 488.9 122.0 70.0 re B
+BT /F2 7.2 Tf 0.050 0.480 0.310 rg 1 0 0 1 309.0 541.7 Tm (MAP) Tj ET
+BT /F1 8.1 Tf 0.340 0.400 0.470 rg 1 0 0 1 309.0 523.8 Tm (pins only for valid) Tj ET
+BT /F1 8.1 Tf 0.340 0.400 0.470 rg 1 0 0 1 309.0 512.8 Tm (coordinates) Tj ET
+BT /F2 10 Tf 0.050 0.480 0.310 rg 1 0 0 1 423.0 521.9 Tm (>) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 430.0 488.9 122.0 70.0 re B
+BT /F2 7.2 Tf 0.050 0.480 0.310 rg 1 0 0 1 439.0 541.7 Tm (CARDS) Tj ET
+BT /F1 8.1 Tf 0.340 0.400 0.470 rg 1 0 0 1 439.0 523.8 Tm (all live parcels in list) Tj ET
+BT /F2 14 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 457.9 Tm (Map capabilities) Tj ET
+0.050 0.480 0.310 rg 51.1 442.9 m 51.1 444.1 50.2 445.0 49.0 445.0 c 47.8 445.0 46.9 444.1 46.9 442.9 c 46.9 441.7 47.8 440.8 49.0 440.8 c 50.2 440.8 51.1 441.7 51.1 442.9 c f
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 441.0 Tm (Live refresh: fetches the public lands endpoint at startup and repeats every 60 seconds; visible status) Tj ET
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 428.3 Tm (distinguishes connected, refreshing, stale, and unavailable states.) Tj ET
+0.050 0.480 0.310 rg 51.1 412.4 m 51.1 413.6 50.2 414.5 49.0 414.5 c 47.8 414.5 46.9 413.6 46.9 412.4 c 46.9 411.3 47.8 410.3 49.0 410.3 c 50.2 410.3 51.1 411.3 51.1 412.4 c f
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 410.5 Tm (Live markers are rebuilt from records with numeric latitude and longitude. Current sample locations cover) Tj ET
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 397.8 Tm (Hyderabad, Gurugram, and Bengaluru; two demo parcels currently have no coordinates.) Tj ET
+0.050 0.480 0.310 rg 51.1 382.0 m 51.1 383.2 50.2 384.1 49.0 384.1 c 47.8 384.1 46.9 383.2 46.9 382.0 c 46.9 380.8 47.8 379.9 49.0 379.9 c 50.2 379.9 51.1 380.8 51.1 382.0 c f
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 380.1 Tm (Street, satellite, and hybrid basemaps are available. Street tiles use CARTO/OpenStreetMap attribution;) Tj ET
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 367.4 Tm (imagery uses Esri tiles.) Tj ET
+0.050 0.480 0.310 rg 51.1 351.5 m 51.1 352.7 50.2 353.6 49.0 353.6 c 47.8 353.6 46.9 352.7 46.9 351.5 c 46.9 350.4 47.8 349.4 49.0 349.4 c 50.2 349.4 51.1 350.4 51.1 351.5 c f
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 349.6 Tm (Place search uses OpenStreetMap Nominatim; driving routes use the public OSRM routing endpoint. These are) Tj ET
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 336.9 Tm (external dependencies and should be replaced or governed by service agreements for production.) Tj ET
+0.050 0.480 0.310 rg 51.1 321.1 m 51.1 322.2 50.2 323.2 49.0 323.2 c 47.8 323.2 46.9 322.2 46.9 321.1 c 46.9 319.9 47.8 319.0 49.0 319.0 c 50.2 319.0 51.1 319.9 51.1 321.1 c f
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 319.2 Tm (Marker popups expose parcel identity/status plus route and Street View actions. Search can move the map to) Tj ET
+BT /F1 8.9 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 306.5 Tm (a matching live record.) Tj ET
+0.8 w 1.000 0.970 0.900 rg 0.880 0.900 0.920 RG 40.0 214.6 515.0 80.0 re B
+BT /F2 7.4 Tf 0.690 0.430 0.060 rg 1 0 0 1 54.0 276.2 Tm (DATA QUALITY / LEGAL CAVEAT) Tj ET
+BT /F1 8.5 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 258.1 Tm (A map pin only indicates coordinates stored in the app database. It does not authenticate a survey boundary or) Tj ET
+BT /F1 8.5 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 246.1 Tm (title. Missing coordinates remain visible in the parcel list but are intentionally not placed at an invented) Tj ET
+BT /F1 8.5 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 234.1 Tm (point.) Tj ET
+BT /F1 7.1 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 191.5 Tm (Implementation: live registry refresh and card/marker rendering in apps/web/public/mark2-app.js; map status markup in apps/web/public/mark2-body.html.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 4614 >>
+stream
+BT /F2 10 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 807.0 Tm (BLOCKLAND) Tj ET
+0.780 0.940 0.200 rg 112.0 811.0 m 112.0 813.2 110.2 815.0 108.0 815.0 c 105.8 815.0 104.0 813.2 104.0 811.0 c 104.0 808.8 105.8 807.0 108.0 807.0 c 110.2 807.0 112.0 808.8 112.0 811.0 c f
+BT /F2 7.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 352.0 807.6 Tm (PRODUCT & TECHNICAL BRIEF  /  08 OCT 2026) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 790.0 m 557.0 790.0 l S
+BT /F2 25 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 745.0 Tm (Separate role dashboards) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 724.7 Tm (Role-aware pages provide distinct views for end users, government reviewers, and platform) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 710.0 Tm (administrators. API authorization remains the source of authority; hiding or showing a page is) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 695.3 Tm (not the security boundary.) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 34.0 m 557.0 34.0 l S
+BT /F2 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 17.5 Tm (BLOCKLAND  |  PLATFORM OVERVIEW  |  08 OCTOBER 2026) Tj ET
+BT /F2 8 Tf 0.340 0.400 0.470 rg 1 0 0 1 529.0 17.0 Tm (04) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 40.0 552.9 515.0 124.0 re B
+BT /F2 9 Tf 0.050 0.480 0.310 rg 1 0 0 1 54.0 655.9 Tm (USER  /dashboard) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 636.1 Tm (Owned plots and verification status; recent transfers and escrow state; notifications; navigation to sales,) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 623.1 Tm (purchases, escrow, and alerts.) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 54.0 582.4 Tm (User API: GET /api/v1/dashboard/user. Session token is read from the same browser storage used by the homepage login flow.) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 40.0 400.9 515.0 140.0 re B
+BT /F2 9 Tf 0.050 0.480 0.310 rg 1 0 0 1 54.0 519.9 Tm (GOVERNMENT  /government) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 500.1 Tm (Registry counts by status; verification requests; transfer approvals; open fraud cases; disputes and) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 487.1 Tm (encumbrances. The reviewer UI provides approve/reject actions and reasons for rejections.) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 54.0 430.4 Tm (Government API: GET /api/v1/dashboard/government. Verification and transfer decision endpoints require GOVERNMENT or ADMIN.) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 40.0 264.9 515.0 124.0 re B
+BT /F2 9 Tf 0.050 0.480 0.310 rg 1 0 0 1 54.0 367.9 Tm (ADMIN  /admin) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 348.1 Tm (Platform-level land/user metrics; sanitized recent user directory; recent audit events. Dedicated route is) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 335.1 Tm (no longer a copy of the government queue.) Tj ET
+BT /F1 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 54.0 294.4 Tm (Admin API: GET /api/v1/admin/stats, /users, /audit-logs; these routes require ADMIN.) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 238.9 Tm (Known functional boundaries) Tj ET
+0.050 0.480 0.310 rg 51.1 223.9 m 51.1 225.1 50.2 226.0 49.0 226.0 c 47.8 226.0 46.9 225.1 46.9 223.9 c 46.9 222.7 47.8 221.8 49.0 221.8 c 50.2 221.8 51.1 222.7 51.1 223.9 c f
+BT /F1 8.6 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 222.3 Tm (The user sales, purchases, escrow, and alerts routes currently reuse the shared user-dashboard view; their) Tj ET
+BT /F1 8.6 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 210.0 Tm (navigation exists, but each does not yet have a dedicated filtered detail page.) Tj ET
+0.050 0.480 0.310 rg 51.1 194.3 m 51.1 195.5 50.2 196.4 49.0 196.4 c 47.8 196.4 46.9 195.5 46.9 194.3 c 46.9 193.1 47.8 192.2 49.0 192.2 c 50.2 192.2 51.1 193.1 51.1 194.3 c f
+BT /F1 8.6 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 192.7 Tm (The admin console is primarily read-only today: it displays metrics, users, and audit logs; it does not expose) Tj ET
+BT /F1 8.6 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 180.4 Tm (account-role editing or comprehensive platform configuration.) Tj ET
+0.050 0.480 0.310 rg 51.1 164.7 m 51.1 165.9 50.2 166.8 49.0 166.8 c 47.8 166.8 46.9 165.9 46.9 164.7 c 46.9 163.5 47.8 162.6 49.0 162.6 c 50.2 162.6 51.1 163.5 51.1 164.7 c f
+BT /F1 8.6 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 163.1 Tm (A parcel in PENDING land status is not automatically the same as a queued VerificationRequest. In the current) Tj ET
+BT /F1 8.6 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 150.8 Tm (sample, one parcel is PENDING while the officer request queue is empty; these are distinct database records.) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 6765 >>
+stream
+BT /F2 10 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 807.0 Tm (BLOCKLAND) Tj ET
+0.780 0.940 0.200 rg 112.0 811.0 m 112.0 813.2 110.2 815.0 108.0 815.0 c 105.8 815.0 104.0 813.2 104.0 811.0 c 104.0 808.8 105.8 807.0 108.0 807.0 c 110.2 807.0 112.0 808.8 112.0 811.0 c f
+BT /F2 7.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 352.0 807.6 Tm (PRODUCT & TECHNICAL BRIEF  /  08 OCT 2026) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 790.0 m 557.0 790.0 l S
+BT /F2 25 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 745.0 Tm (Architecture & data model) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 724.7 Tm (A workspace monorepo connects browser UI, REST services, relational business records, and a) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 710.0 Tm (separately maintained smart-contract package.) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 34.0 m 557.0 34.0 l S
+BT /F2 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 17.5 Tm (BLOCKLAND  |  PLATFORM OVERVIEW  |  08 OCTOBER 2026) Tj ET
+BT /F2 8 Tf 0.340 0.400 0.470 rg 1 0 0 1 529.0 17.0 Tm (05) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 40.0 595.6 119.0 96.0 re B
+BT /F2 7.5 Tf 0.050 0.480 0.310 rg 1 0 0 1 50.0 674.1 Tm (WEB) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 50.0 653.9 Tm (Next.js 14) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 50.0 642.9 Tm (React + TypeScript) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 50.0 631.9 Tm (Leaflet + HTML/JS shell) Tj ET
+BT /F2 11 Tf 0.050 0.480 0.310 rg 1 0 0 1 162.0 639.6 Tm (>) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 172.0 595.6 119.0 96.0 re B
+BT /F2 7.5 Tf 0.050 0.480 0.310 rg 1 0 0 1 182.0 674.1 Tm (API) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 182.0 653.9 Tm (Express + TypeScript) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 182.0 642.9 Tm (JWT / role middleware) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 182.0 631.9 Tm (REST + Socket.IO) Tj ET
+BT /F2 11 Tf 0.050 0.480 0.310 rg 1 0 0 1 294.0 639.6 Tm (>) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 304.0 595.6 119.0 96.0 re B
+BT /F2 7.5 Tf 0.050 0.480 0.310 rg 1 0 0 1 314.0 674.1 Tm (DATA) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 314.0 653.9 Tm (PostgreSQL) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 314.0 642.9 Tm (Prisma ORM) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 314.0 631.9 Tm (Redis optional) Tj ET
+BT /F2 11 Tf 0.050 0.480 0.310 rg 1 0 0 1 426.0 639.6 Tm (>) Tj ET
+0.8 w 1.000 1.000 1.000 rg 0.880 0.900 0.920 RG 436.0 595.6 119.0 96.0 re B
+BT /F2 7.5 Tf 0.050 0.480 0.310 rg 1 0 0 1 446.0 674.1 Tm (CHAIN) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 446.0 653.9 Tm (Hardhat / Solidity) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 446.0 642.9 Tm (ERC-721 + AccessControl) Tj ET
+BT /F1 7.7 Tf 0.060 0.090 0.130 rg 1 0 0 1 446.0 631.9 Tm (separate deployment) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 565.6 Tm (Core records represented) Tj ET
+0.8 w 0.960 0.970 0.980 rg 0.880 0.900 0.920 RG 40.0 441.6 165.0 116.0 re B
+BT /F2 7 Tf 0.050 0.480 0.310 rg 1 0 0 1 50.0 539.6 Tm (IDENTITY & ACCESS) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 50.0 518.6 Tm (User role \(USER / GOVERNMENT /) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 50.0 507.1 Tm (ADMIN\), password hash, verification) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 50.0 495.6 Tm (flags, linked wallet, refresh) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 50.0 484.1 Tm (tokens.) Tj ET
+0.8 w 0.960 0.970 0.980 rg 0.880 0.900 0.920 RG 214.0 441.6 165.0 116.0 re B
+BT /F2 7 Tf 0.050 0.480 0.310 rg 1 0 0 1 224.0 539.6 Tm (PARCEL & EVIDENCE) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 224.0 518.6 Tm (Land, status, coordinates,) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 224.0 507.1 Tm (ownership, documents, SHA-256) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 224.0 495.6 Tm (hashes, identity verification,) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 224.0 484.1 Tm (verification request.) Tj ET
+0.8 w 0.960 0.970 0.980 rg 0.880 0.900 0.920 RG 388.0 441.6 165.0 116.0 re B
+BT /F2 7 Tf 0.050 0.480 0.310 rg 1 0 0 1 398.0 539.6 Tm (TRANSACTION & RISK) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 398.0 518.6 Tm (Transfer, escrow account, officer) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 398.0 507.1 Tm (approval, ownership history,) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 398.0 495.6 Tm (encumbrance, dispute, fraud flag,) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 398.0 484.1 Tm (notification.) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 412.6 Tm (Key API surfaces) Tj ET
+0.050 0.480 0.310 rg 51.1 397.6 m 51.1 398.8 50.2 399.7 49.0 399.7 c 47.8 399.7 46.9 398.8 46.9 397.6 c 46.9 396.4 47.8 395.5 49.0 395.5 c 50.2 395.5 51.1 396.4 51.1 397.6 c f
+BT /F1 8.4 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 396.2 Tm (Auth and profile: /api/v1/auth; land registry and search: /api/v1/lands; projects: /api/v1/projects; transfers) Tj ET
+BT /F1 8.4 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 384.2 Tm (and escrow: /api/v1/transfers.) Tj ET
+0.050 0.480 0.310 rg 51.1 368.6 m 51.1 369.7 50.2 370.7 49.0 370.7 c 47.8 370.7 46.9 369.7 46.9 368.6 c 46.9 367.4 47.8 366.5 49.0 366.5 c 50.2 366.5 51.1 367.4 51.1 368.6 c f
+BT /F1 8.4 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 367.2 Tm (Role dashboards and actions: /api/v1/dashboard; officer verification queue/actions: /api/v1/verification; public) Tj ET
+BT /F1 8.4 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 355.2 Tm (parcel report: /api/v1/verification-report/:plotId/verify.) Tj ET
+0.050 0.480 0.310 rg 51.1 339.6 m 51.1 340.7 50.2 341.7 49.0 341.7 c 47.8 341.7 46.9 340.7 46.9 339.6 c 46.9 338.4 47.8 337.5 49.0 337.5 c 50.2 337.5 51.1 338.4 51.1 339.6 c f
+BT /F1 8.4 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 338.2 Tm (Additional API packages cover documents, builder discovery, site visits/reviews/engagement, fractional ownership,) Tj ET
+BT /F1 8.4 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 326.1 Tm (wallet, and admin reporting. OpenAPI/Swagger is served at /api/v1/docs.) Tj ET
+0.8 w 0.950 0.970 0.990 rg 0.880 0.900 0.920 RG 40.0 222.5 515.0 93.0 re B
+BT /F2 7.4 Tf 0.690 0.430 0.060 rg 1 0 0 1 54.0 297.1 Tm (IMPORTANT INTEGRATION DISTINCTION) Tj ET
+BT /F1 8.25 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 278.3 Tm (A Solidity registry contract exists, but the reviewed transfer controller performs the demo transfer/escrow state) Tj ET
+BT /F1 8.25 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 266.8 Tm (changes in PostgreSQL, with DEMO_ESCROW references. No production chain transaction or payment-rail integration was) Tj ET
+BT /F1 8.25 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 255.3 Tm (verified. Treat blockchain hashes and escrow status as application data until end-to-end chain/payment) Tj ET
+BT /F1 8.25 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 243.8 Tm (reconciliation is implemented.) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 5676 >>
+stream
+BT /F2 10 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 807.0 Tm (BLOCKLAND) Tj ET
+0.780 0.940 0.200 rg 112.0 811.0 m 112.0 813.2 110.2 815.0 108.0 815.0 c 105.8 815.0 104.0 813.2 104.0 811.0 c 104.0 808.8 105.8 807.0 108.0 807.0 c 110.2 807.0 112.0 808.8 112.0 811.0 c f
+BT /F2 7.4 Tf 0.340 0.400 0.470 rg 1 0 0 1 352.0 807.6 Tm (PRODUCT & TECHNICAL BRIEF  /  08 OCT 2026) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 790.0 m 557.0 790.0 l S
+BT /F2 25 Tf 0.060 0.090 0.130 rg 1 0 0 1 38.0 745.0 Tm (Operational status & next steps) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 724.7 Tm (This is a functional local MVP/prototype, not a production government registry or legal) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 710.0 Tm (conveyance system. The overview below separates what was observed working from what still needs) Tj ET
+BT /F1 10.3 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 695.3 Tm (production engineering.) Tj ET
+1 w 0.880 0.900 0.920 RG 38.0 34.0 m 557.0 34.0 l S
+BT /F2 7.5 Tf 0.340 0.400 0.470 rg 1 0 0 1 38.0 17.5 Tm (BLOCKLAND  |  PLATFORM OVERVIEW  |  08 OCTOBER 2026) Tj ET
+BT /F2 8 Tf 0.340 0.400 0.470 rg 1 0 0 1 529.0 17.0 Tm (06) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 663.9 Tm (Verified during this overview) Tj ET
+0.050 0.480 0.310 rg 51.1 648.9 m 51.1 650.1 50.2 651.0 49.0 651.0 c 47.8 651.0 46.9 650.1 46.9 648.9 c 46.9 647.7 47.8 646.8 49.0 646.8 c 50.2 646.8 51.1 647.7 51.1 648.9 c f
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 647.1 Tm (Frontend responded at http://localhost:3200; API health returned {"status":"ok"} at) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 634.5 Tm (http://localhost:4001/health.) Tj ET
+0.050 0.480 0.310 rg 51.1 618.7 m 51.1 619.9 50.2 620.8 49.0 620.8 c 47.8 620.8 46.9 619.9 46.9 618.7 c 46.9 617.6 47.8 616.6 49.0 616.6 c 50.2 616.6 51.1 617.6 51.1 618.7 c f
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 616.9 Tm (Live API returned five land records and two projects. Parcel statuses: 2 VERIFIED, 1 PENDING, 1) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 604.3 Tm (LOCKED_FOR_SALE, and 1 DISPUTED.) Tj ET
+0.050 0.480 0.310 rg 51.1 588.6 m 51.1 589.7 50.2 590.7 49.0 590.7 c 47.8 590.7 46.9 589.7 46.9 588.6 c 46.9 587.4 47.8 586.5 49.0 586.5 c 50.2 586.5 51.1 587.4 51.1 588.6 c f
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 586.8 Tm (Browser showed "Live registry" status, five live parcel cards, and three map markers. Missing coordinate) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 574.2 Tm (records were labeled rather than plotted.) Tj ET
+0.050 0.480 0.310 rg 51.1 558.4 m 51.1 559.6 50.2 560.5 49.0 560.5 c 47.8 560.5 46.9 559.6 46.9 558.4 c 46.9 557.2 47.8 556.3 49.0 556.3 c 50.2 556.3 51.1 557.2 51.1 558.4 c f
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 556.6 Tm (Production frontend build and API TypeScript build completed successfully during the dashboard/map work;) Tj ET
+BT /F1 8.8 Tf 0.060 0.090 0.130 rg 1 0 0 1 60.0 544.0 Tm (updated map script passed Node syntax validation.) Tj ET
+BT /F2 13 Tf 0.060 0.090 0.130 rg 1 0 0 1 40.0 519.2 Tm (Before any real-world rollout) Tj ET
+BT /F2 7.7 Tf 0.050 0.480 0.310 rg 1 0 0 1 46.0 503.5 Tm (01  TRUSTED DATA) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 489.9 Tm (Integrate authoritative land-record sources and signed officer workflows; validate parcel coordinates/survey) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 478.3 Tm (boundaries; define document provenance and retention.) Tj ET
+BT /F2 7.7 Tf 0.050 0.480 0.310 rg 1 0 0 1 46.0 459.3 Tm (02  REAL SETTLEMENT) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 445.7 Tm (Replace DEMO_ESCROW with an audited regulated payment/escrow provider; connect and reconcile actual on-chain) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 434.1 Tm (transactions if blockchain is part of the legal process.) Tj ET
+BT /F2 7.7 Tf 0.050 0.480 0.310 rg 1 0 0 1 46.0 415.1 Tm (03  SECURITY & PRIVACY) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 401.5 Tm (Replace placeholder JWT secrets; establish managed secrets, HTTPS, production CORS, backups, least privilege, audit) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 389.9 Tm (monitoring, access reviews, and PII controls.) Tj ET
+BT /F2 7.7 Tf 0.050 0.480 0.310 rg 1 0 0 1 46.0 370.9 Tm (04  COMPLETE PRODUCT) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 357.3 Tm (Build dedicated user sales/purchases/escrow/alerts pages; complete admin management workflows; add end-to-end tests) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 345.7 Tm (for verification, rejection, cooling periods, expiry, and transfer rollback.) Tj ET
+BT /F2 7.7 Tf 0.050 0.480 0.310 rg 1 0 0 1 46.0 326.7 Tm (05  OPERATIONS & COMPLIANCE) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 313.1 Tm (Confirm jurisdictional legal requirements, accessibility, external map-provider terms/limits, incident response,) Tj ET
+BT /F1 8.3 Tf 0.060 0.090 0.130 rg 1 0 0 1 46.0 301.5 Tm (support, and recovery procedures.) Tj ET
+0.8 w 0.940 0.970 0.910 rg 0.880 0.900 0.920 RG 40.0 220.2 515.0 69.0 re B
+BT /F2 7.2 Tf 0.050 0.480 0.310 rg 1 0 0 1 54.0 272.0 Tm (LOCAL REVIEW LINKS) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 254.2 Tm (Homepage / map: http://localhost:3200  |  User: /dashboard  |  Government: /government  |  Admin: /admin  |  API docs:) Tj ET
+BT /F1 8 Tf 0.060 0.090 0.130 rg 1 0 0 1 54.0 243.2 Tm (http://localhost:4001/api/v1/docs) Tj ET
+BT /F1 7 Tf 0.340 0.400 0.470 rg 1 0 0 1 40.0 57.0 Tm (Prepared from live local UI/API checks and repository source review. Demo data is illustrative; this is not legal, title, or investment advice.) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 15 0 R >>
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000155 00000 n 
+0000000225 00000 n 
+0000000300 00000 n 
+0000005046 00000 n 
+0000005182 00000 n 
+0000011249 00000 n 
+0000011385 00000 n 
+0000017577 00000 n 
+0000017714 00000 n 
+0000022381 00000 n 
+0000022519 00000 n 
+0000029337 00000 n 
+0000029475 00000 n 
+0000035204 00000 n 
+trailer
+<< /Size 17 /Root 1 0 R >>
+startxref
+35342
+%%EOF
