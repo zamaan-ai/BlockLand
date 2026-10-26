@@ -1,0 +1,41 @@
+{
+  "name": "blockland",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blockchain-backed land registry + property discovery platform",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev:api & npm run dev:web",
+    "dev:web": "npm run dev --workspace=@blockland/web -- -p 3001",
+    "dev:api": "npm run dev --workspace=@blockland/api",
+    "build": "npm run build --workspaces --if-present",
+    "build:api": "npm run build --workspace=@blockland/api",
+    "build:web": "npm run build --workspace=@blockland/web",
+    "start:api": "npm run start --workspace=@blockland/api",
+    "start:web": "npm run start --workspace=@blockland/web",
+    "test:api": "npm run test --workspace=@blockland/api",
+    "db:generate": "prisma generate --schema=prisma/schema.prisma",
+    "db:push": "prisma db push --schema=prisma/schema.prisma",
+    "db:migrate": "prisma migrate dev --schema=prisma/schema.prisma",
+    "db:studio": "prisma studio --schema=prisma/schema.prisma",
+    "db:seed-demo-images": "tsx prisma/seed-demo-images.ts",
+    "contracts:compile": "npm run compile --workspace=@blockland/contracts",
+    "contracts:test": "npm run test --workspace=@blockland/contracts",
+    "contracts:deploy": "npm run deploy:local --workspace=@blockland/contracts"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,550 @@
+<header class="topbar">
+    <a class="brand" href="#top"><b>block</b>land<span>●</span></a>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav>
+    <a href="#explore">Explore</a>
+    <a href="#plot">Plot Details</a>
+    <a href="#projects">Projects</a>
+    <a href="#builders">Builders</a>
+    <a href="#how">How it works</a>
+  </nav>
+  <div class="header-actions">
+      <button class="wallet" id="walletBtn">⌁ Connect wallet</button>
+      <a href="#portal" class="profile">Create profile <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Land registry, reimagined · Mark 2</p>
+        <h1>Know the ground<br />you stand on.</h1>
+        <p>Discover land and development projects with clear verification status, transparent record history, location intelligence, reviews, and direct dealer access.</p>
+        <div class="hero-actions">
+          <a href="#explore" class="button primary">Explore verified land <span>→</span></a>
+          <a href="#how" class="text-link">How verification works <span>↓</span></a>
+        </div>
+      </div>
+      <div class="plot-art" aria-hidden="true">
+        <div class="plot-label top">PLOT&nbsp; 0098A</div>
+        <div class="plot-label bottom">RECORDED&nbsp; 0X83...48A</div>
+        <i class="shape s1"></i><i class="shape s2"></i><i class="shape s3"></i><i class="shape s4"></i>
+        <i class="node n1"></i><i class="node n2"></i><i class="node n3"></i>
+      </div>
+      <div class="search-panel">
+        <div class="search-tabs">
+          <button class="active" data-tab="land">Explore land</button>
+          <button data-tab="builders">Builders</button>
+          <button data-tab="projects">Projects</button>
+        </div>
+        <div class="search-row">
+          <span class="search-icon">⌕</span>
+          <input id="search" placeholder="Search a city, plot ID or landmark" />
+          <button id="searchButton">Search <span>→</span></button>
+        </div>
+        <div class="search-options">
+          <span>Try: Hyderabad · Bengaluru · Plot BL-00372</span>
+          <label><input type="checkbox" id="verifiedOnly" checked /> Verified records only</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
+      <div><b>01</b><span>Government review</span><small>Authorized review confirms a record.</small></div>
+      <div><b>02</b><span>Blockchain recording</span><small>Approved events create an auditable history.</small></div>
+      <div><b>03</b><span>Discovery with context</span><small>Explore land, people, projects & location insights.</small></div>
+      <p>Verification is visible, not assumed. <span>↘</span></p>
+    </section>
+
+    <!-- EXPLORE + LIVE MAP -->
+    <section class="explore" id="explore">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Explore the registry</p>
+          <h2>Land, with the full picture.</h2>
+        </div>
+        <p>Live map with search, directions and street view. Click any plot marker for details.</p>
+      </div>
+
+      <div class="explore-layout">
+        <!-- Live Map Card -->
+        <div class="map-card improved">
+          <div class="map-toolbar">
+            <div class="map-search-box">
+              <input type="text" id="mapSearch" placeholder="Search place or address" />
+              <button id="mapSearchBtn" title="Search">⌕</button>
+            </div>
+            <div class="map-tabs" id="basemapTabs">
+              <button class="active" data-layer="streets">Streets</button>
+              <button data-layer="satellite">Satellite</button>
+              <button data-layer="hybrid">Hybrid</button>
+            </div>
+            <div class="map-live-status" id="mapLiveStatus" data-state="loading" role="status" aria-live="polite">
+              <i></i><span>Connecting to live registry…</span>
+            </div>
+            <div class="map-tools">
+              <button id="btnLocate" title="My location">📍</button>
+              <button id="btnDirections" title="Directions">↗</button>
+              <button id="btnStreetView" title="Street View">🛣</button>
+              <button id="btnReset" title="Reset view">↺</button>
+            </div>
+          </div>
+
+          <div id="map" class="map-canvas"></div>
+
+          <!-- Directions panel -->
+          <div class="directions-panel" id="directionsPanel" hidden>
+            <div class="dir-header">
+              <strong>Directions</strong>
+              <button id="closeDirections" aria-label="Close">×</button>
+            </div>
+            <div class="dir-inputs">
+              <input type="text" id="dirFrom" placeholder="Starting point" />
+              <input type="text" id="dirTo" placeholder="Destination (plot or address)" />
+              <button id="getDirectionsBtn" class="button small primary">Get route</button>
+            </div>
+            <div id="dirResult" class="dir-result"></div>
+          </div>
+
+          <div class="map-legend">
+            <span><i class="dot verified"></i> Government verified</span>
+            <span><i class="dot blockchain"></i> Blockchain recorded</span>
+            <span><i class="dot submitted"></i> Owner submitted</span>
+          </div>
+        </div>
+
+        <!-- Land list -->
+        <div class="land-list">
+          <article class="land-card featured-card" data-plot="BL-00372">
+            <img class="land-image" src="/images/demo-plots/BL-00372.svg" alt="Illustrative demo image for 2.4 acres near Financial District" loading="lazy" />
+            <div class="status-row">
+              <span class="status verified">✓ Government verified</span>
+              <button class="save-btn" aria-label="Save plot">♡</button>
+            </div>
+            <p class="mono">BL-00372 · RESIDENTIAL</p>
+            <h3>2.4 acres near Financial District</h3>
+            <p class="location">⌖ Nanakramguda, Hyderabad</p>
+            <div class="land-meta">
+              <span><b>2.4</b> acres</span>
+              <span><b>2018</b> recorded</span>
+              <span><b>06</b> history events</span>
+            </div>
+            <div class="card-actions">
+              <a href="#plot" class="button small">View full details →</a>
+              <button class="button ghost small" data-action="site-visit">Request site visit</button>
+              <button class="button ghost small" data-action="directions" data-lat="17.4412" data-lng="78.3489">Directions</button>
+            </div>
+          </article>
+
+          <article class="land-card compact" data-plot="BL-00841">
+            <img class="land-image" src="/images/demo-plots/BL-00841.svg" alt="Illustrative demo image for Greenfield parcel, Sector 79" loading="lazy" />
+            <span class="status blockchain">◈ Blockchain recorded</span>
+            <h3>Greenfield parcel, Sector 79</h3>
+            <p>Gurugram · 1.2 acres</p>
+            <div class="card-actions">
+              <button class="button ghost small" data-action="site-visit">Request visit</button>
+              <button class="button ghost small" data-action="directions" data-lat="28.4089" data-lng="77.0677">Directions</button>
+            </div>
+          </article>
+
+          <article class="land-card compact" data-plot="BL-01120">
+            <img class="land-image" src="/images/demo-plots/BL-01120.svg" alt="Illustrative demo image for ORR frontage plot" loading="lazy" />
+            <span class="status verified">✓ Government verified</span>
+            <h3>ORR frontage plot</h3>
+            <p>Bengaluru · 3.1 acres</p>
+            <div class="card-actions">
+              <button class="button ghost small" data-action="site-visit">Request visit</button>
+              <button class="button ghost small" data-action="directions" data-lat="12.9716" data-lng="77.5946">Directions</button>
+            </div>
+          </article>
+
+          <a class="view-more" href="#explore">Browse all verified land <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENHANCED PLOT DETAILS -->
+    <section class="plot-detail" id="plot">
+      <div class="plot-header">
+        <div>
+          <p class="eyebrow">Plot BL-00372</p>
+          <h2>2.4 acres near Financial District</h2>
+          <p class="location">⌖ Nanakramguda, Hyderabad · Residential zoning</p>
+        </div>
+        <div class="plot-header-actions">
+          <span class="status verified">✓ Government verified</span>
+          <span class="status blockchain">◈ Blockchain recorded</span>
+          <button class="button primary" id="requestVisitBtn">Request Site Visit</button>
+        </div>
+      </div>
+
+      <div class="plot-grid">
+        <div class="plot-main">
+          <div class="media-gallery">
+            <div class="main-image">Aerial view · Financial District</div>
+            <div class="thumb-row">
+              <div class="thumb">Drone 1</div>
+              <div class="thumb">Boundary</div>
+              <div class="thumb">Approach</div>
+              <div class="thumb">+4 more</div>
+            </div>
+          </div>
+
+          <div class="detail-block">
+            <h3>Key facts</h3>
+            <div class="facts-grid">
+              <div><b>Area</b><span>2.4 acres (10,417 sq.yd)</span></div>
+              <div><b>Dimensions</b><span>Approx. 180 × 220 ft</span></div>
+              <div><b>Zoning</b><span>Residential</span></div>
+              <div><b>Recorded</b><span>2018 · 6 history events</span></div>
+              <div><b>Token ID</b><span class="mono">#372</span></div>
+              <div><b>Last TX</b><span class="mono">0x83f1…d44a</span></div>
+            </div>
+          </div>
+
+          <div class="detail-block pros-cons">
+            <h3>Location Pros & Cons</h3>
+            <div class="pros-cons-grid">
+              <div class="pros">
+                <h4>✓ Advantages</h4>
+                <ul>
+                  <li>5 min from Financial District & IT corridor</li>
+                  <li>Excellent road connectivity (ORR + arterial roads)</li>
+                  <li>High appreciation potential (past 5 yrs)</li>
+                  <li>Nearby schools, hospitals & retail</li>
+                  <li>Clear title with government verification</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <h4>△ Considerations</h4>
+                <ul>
+                  <li>Peak-hour traffic congestion on approach roads</li>
+                  <li>Limited immediate green cover</li>
+                  <li>Premium pricing relative to outer zones</li>
+                  <li>Future metro station still 2+ years away</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-block reviews" id="reviews">
+            <div class="reviews-header">
+              <h3>Reviews & Ratings</h3>
+              <div class="rating-summary">
+                <span class="score">4.6</span>
+                <span class="stars">★★★★☆</span>
+                <span class="count">18 reviews</span>
+              </div>
+            </div>
+            <div class="review-list">
+              <article class="review">
+                <div class="review-top">
+                  <strong>Ananya R.</strong>
+                  <span class="badge">Verified visitor</span>
+                  <span class="stars">★★★★★</span>
+                </div>
+                <p>Visited last month. Clear demarcation, good approach road, and the verification timeline gave us confidence. Dealer was responsive.</p>
+                <time>12 Sep 2026</time>
+              </article>
+              <article class="review">
+                <div class="review-top">
+                  <strong>Karthik M.</strong>
+                  <span class="badge">Verified buyer</span>
+                  <span class="stars">★★★★☆</span>
+                </div>
+                <p>Solid location for residential development. Traffic is the only downside during office hours.</p>
+                <time>28 Aug 2026</time>
+              </article>
+            </div>
+            <button class="button ghost" id="writeReviewBtn">Write a review</button>
+          </div>
+
+          <div class="detail-block">
+            <h3>Trust timeline</h3>
+            <div class="timeline">
+              <div class="timeline-head">
+                <span>Plot BL-00372</span>
+                <span class="live">● Live status</span>
+              </div>
+              <ol>
+                <li>
+                  <time>12 Apr 2026</time>
+                  <div>
+                    <b>Government verification complete</b>
+                    <p>Record matched with the authoritative source.</p>
+                    <span class="status verified">✓ Government verified</span>
+                  </div>
+                </li>
+                <li>
+                  <time>12 Apr 2026</time>
+                  <div>
+                    <b>Registry event recorded</b>
+                    <p class="mono">TX 0x83f1...d44a · Block #8750229</p>
+                    <span class="status blockchain">◈ Blockchain recorded</span>
+                  </div>
+                </li>
+                <li>
+                  <time>04 Apr 2026</time>
+                  <div>
+                    <b>Owner submitted documents</b>
+                    <p>Private documents shared with the verification team.</p>
+                    <span class="status submitted">Owner submitted</span>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <aside class="plot-sidebar">
+          <div class="sidebar-card dealer-card">
+            <p class="eyebrow">Listed by</p>
+            <div class="dealer-info">
+              <div class="avatar">VK</div>
+              <div>
+                <strong>Vikram Krishna</strong>
+                <span>Verified Dealer · Hyderabad</span>
+              </div>
+            </div>
+            <div class="dealer-meta">
+              <span>⏱ Avg. response: 38 min</span>
+              <span>★ 4.8 (42 deals)</span>
+            </div>
+            <button class="button primary full" id="contactDealerBtn">Contact Dealer</button>
+            <button class="button ghost full" id="chatDealerBtn">Start chat</button>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Request Site Visit</h4>
+            <p class="muted">Schedule a visit with the dealer or owner.</p>
+            <button class="button dark full" id="sidebarVisitBtn">Choose date & time</button>
+          </div>
+
+          <div class="sidebar-card">
+            <p class="eyebrow">On the map</p>
+            <h4>Nanakramguda</h4>
+            <p class="muted">17.4412° N, 78.3489° E</p>
+            <div class="sidebar-map-actions">
+              <button class="button ghost small" id="plotDirectionsBtn">Get directions</button>
+              <button class="button ghost small" id="plotStreetViewBtn">Street View</button>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <p class="eyebrow">Linked project</p>
+            <h4>Riverline Commons</h4>
+            <p class="muted">Mixed-use · Active</p>
+            <a href="#projects" class="text-link">View project →</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="section-heading inline">
+        <div>
+          <p class="eyebrow">Built on verified ground</p>
+          <h2>Projects with provenance.</h2>
+        </div>
+        <a class="text-link" href="#projects">Explore all projects <span>→</span></a>
+      </div>
+      <div class="project-grid">
+        <article class="project project-a">
+          <div class="project-top">
+            <span class="status active">● Active</span>
+            <button>↗</button>
+          </div>
+          <div>
+            <p class="mono">RIVERLINE · HYDERABAD</p>
+            <h3>Riverline Commons</h3>
+            <p>Mixed-use neighbourhood on 8.6 acres of linked land.</p>
+            <span class="linked">↗ Linked verified land record</span>
+          </div>
+        </article>
+        <article class="project project-b">
+          <div class="project-top">
+            <span class="status planned">● Planned</span>
+            <button>↗</button>
+          </div>
+          <div>
+            <p class="mono">NORTHFIELD · PUNE</p>
+            <h3>Northfield Assembly</h3>
+            <p>A low-rise workplace campus designed for flexibility.</p>
+            <span class="linked">↗ Linked verified land record</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BUILDERS -->
+    <section class="builders" id="builders">
+      <div class="builder-feature">
+        <div class="avatar">NR</div>
+        <div class="builder-copy">
+          <p class="eyebrow">Verified developer profile</p>
+          <h2>Nara Developments</h2>
+          <p>Creating long-life places across Bengaluru and Hyderabad.</p>
+          <div class="tag-row">
+            <span>Residential</span>
+            <span>Commercial</span>
+            <span>Infrastructure</span>
+          </div>
+        </div>
+        <div class="stats">
+          <span><b>18</b> verified lands</span>
+          <span><b>12</b> active projects</span>
+          <span><b>5</b> locations</span>
+        </div>
+        <a class="button dark" href="#builders">Visit profile <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- PORTAL -->
+    <section class="portal" id="portal">
+      <div>
+        <p class="eyebrow">One platform, multiple spaces</p>
+        <h2>Built for every role<br />in the land ecosystem.</h2>
+      </div>
+      <div class="portal-grid">
+        <article>
+          <b>For explorers</b>
+          <h3>Find land with confidence.</h3>
+          <p>Search places, inspect status, read reviews, request site visits, and discover developments.</p>
+          <a href="#explore">Explore land →</a>
+        </article>
+        <article>
+          <b>For owners & builders</b>
+          <h3>Make your work discoverable.</h3>
+          <p>Build a profile, organize your portfolio, and showcase projects responsibly.</p>
+          <a href="#portal">Create profile →</a>
+        </article>
+        <article>
+          <b>For dealers</b>
+          <h3>Manage enquiries & visits.</h3>
+          <p>Respond to leads, schedule site visits, and track response metrics.</p>
+          <a href="#portal">Dealer dashboard →</a>
+        </article>
+        <article>
+          <b>For government teams</b>
+          <h3>Review with a clear audit trail.</h3>
+          <p>Verify records, approve transfers, moderate reviews, and track every sensitive action.</p>
+          <a href="#portal">Open officer portal →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <p><b>Important:</b> A blockchain record supports an auditable history. It is not, by itself, legal land title. Only the relevant authorized process can establish verification. Reviews and location insights are community and data-driven and do not constitute legal advice. Map data © OpenStreetMap contributors.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top"><b>block</b>land<span>●</span></a>
+    <p>Trusted land records, human-friendly discovery.</p>
+    <nav>
+      <a href="#explore">Explore</a>
+      <a href="#plot">Plot Details</a>
+      <a href="#projects">Projects</a>
+      <a href="#builders">Builders</a>
+      <a href="#how">Trust centre</a>
+    </nav>
+    <small>BlockLand Mark 2 — Demo registry data is illustrative and is not evidence of legal title or government endorsement.</small>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- MODAL: Request Site Visit -->
+  <div class="modal" id="visitModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <header>
+        <h3>Request Site Visit</h3>
+        <button class="close" data-close aria-label="Close">×</button>
+      </header>
+      <form id="visitForm">
+        <input type="hidden" name="plotId" value="BL-00372" />
+        <label>Preferred date <input type="date" name="date" required /></label>
+        <label>Preferred time
+          <select name="time" required>
+            <option value="">Select slot</option>
+            <option value="09:00">09:00 – 11:00</option>
+            <option value="11:00">11:00 – 13:00</option>
+            <option value="14:00">14:00 – 16:00</option>
+            <option value="16:00">16:00 – 18:00</option>
+          </select>
+        </label>
+        <label>Your name <input type="text" name="name" placeholder="Full name" required /></label>
+        <label>Email <input type="email" name="email" placeholder="you@example.com" required /></label>
+        <label>Phone <input type="tel" name="phone" placeholder="+91 ..." required /></label>
+        <label>Notes <textarea name="notes" placeholder="Any specific questions or requirements"></textarea></label>
+        <button type="submit" class="button primary full">Submit request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: Contact Dealer -->
+  <div class="modal" id="dealerModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <header>
+        <h3>Contact Vikram Krishna</h3>
+        <button class="close" data-close aria-label="Close">×</button>
+      </header>
+      <form id="dealerForm">
+        <input type="hidden" name="plotId" value="BL-00372" />
+        <label>Your name <input type="text" name="name" required /></label>
+        <label>Email <input type="email" name="email" required placeholder="you@example.com" /></label>
+        <label>Phone <input type="tel" name="phone" placeholder="+91 ..." /></label>
+        <label>Message <textarea name="message" required placeholder="I'm interested in Plot BL-00372..."></textarea></label>
+        <button type="submit" class="button primary full">Send enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: Write Review -->
+  <div class="modal" id="reviewModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <header>
+        <h3>Write a review</h3>
+        <button class="close" data-close aria-label="Close">×</button>
+      </header>
+      <form id="reviewForm">
+        <input type="hidden" name="plotId" value="BL-00372" />
+        <label>Your name <input type="text" name="name" placeholder="Display name" required /></label>
+        <label>Rating
+          <select name="rating" required>
+            <option value="5">★★★★★ Excellent</option>
+            <option value="4">★★★★☆ Good</option>
+            <option value="3">★★★☆☆ Average</option>
+            <option value="2">★★☆☆☆ Poor</option>
+            <option value="1">★☆☆☆☆ Bad</option>
+          </select>
+        </label>
+        <label>Your review <textarea name="comment" required placeholder="Share your experience with this plot or location..."></textarea></label>
+        <button type="submit" class="button primary full">Submit review</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="authModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h3 id="authModalTitle">Sign in</h3>
+      <p class="muted" id="authModalSub">Use your BlockLand account</p>
+      <form id="authForm">
+        <label>Name <input name="name" id="authName" placeholder="Your name" /></label>
+        <label>Email <input name="email" type="email" required placeholder="you@example.com" /></label>
+        <label>Password <input name="password" type="password" required minlength="6" placeholder="••••••••" /></label>
+        <button type="submit" class="button primary full" id="authSubmitBtn">Sign in</button>
+      </form>
+      <p style="margin-top:12px;font-size:13px;color:#5c6b7a">
+        <button type="button" id="authToggleMode" class="text-link" style="background:none;border:none;cursor:pointer;font-weight:700">Need an account? Register</button>
+      </p>
+    </div>
+  </div>

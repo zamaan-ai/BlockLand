@@ -1,0 +1,593 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+model SavedLand {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  landId    String
+  land      Land     @relation(fields: [landId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, landId])
+  @@index([userId, createdAt])
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  USER
+  LANDOWNER
+  BUYER
+  DEVELOPER
+  GOVERNMENT
+  ADMIN
+}
+
+enum LandStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+  TRANSFERRED
+  LOCKED_FOR_SALE
+  DISPUTED
+  MORTGAGED
+  UNDER_REVIEW
+}
+
+enum DocumentType {
+  LAND_TITLE
+  SURVEY_PLAN
+  ID_PROOF
+  OWNERSHIP_DEED
+  TRANSFER_DEED
+  OTHER
+}
+
+enum TransferStatus {
+  INITIATED
+  LOCKED
+  ESCROW_FUNDED
+  UNDER_REVIEW
+  APPROVED
+  REJECTED
+  COMPLETED
+  CANCELLED
+  REFUNDED
+}
+
+enum VerificationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum IdentityVerificationStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+  EXPIRED
+}
+
+enum EscrowStatus {
+  PENDING
+  FUNDED
+  RELEASED
+  REFUNDED
+  FAILED
+}
+
+enum EncumbranceType {
+  MORTGAGE
+  LIEN
+  ACQUISITION_NOTICE
+  COURT_ORDER
+  OTHER
+}
+
+enum DisputeStatus {
+  OPEN
+  UNDER_REVIEW
+  RESOLVED
+  DISMISSED
+}
+
+enum FraudSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum SiteVisitStatus {
+  REQUESTED
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+enum EnquiryStatus {
+  NEW
+  CONTACTED
+  CLOSED
+}
+
+enum ProjectStatus {
+  PLANNING
+  ACTIVE
+  COMPLETED
+  CANCELLED
+}
+
+model User {
+  id                    String                 @id @default(cuid())
+  email                 String                 @unique
+  passwordHash          String
+  name                  String
+  phone                 String?
+  aadhaarNumber         String?                @unique
+  googleId              String?                @unique
+  emailVerified         Boolean                @default(false)
+  aadhaarVerified       Boolean                @default(false)
+  role                  Role                   @default(USER)
+  bio                   String?
+  coverImageUrl         String?
+  interests             String[]               @default([])
+  developerVerified     Boolean                @default(false)
+  profileViews          Int                    @default(0)
+  transferFrozen        Boolean                @default(false)
+  transferFreezeReason  String?
+  transferFrozenAt      DateTime?
+  walletAddress         String?                @unique
+  isVerified            Boolean                @default(false)
+  isActive              Boolean                @default(true)
+  avatar                String?
+  identityVerifications IdentityVerification[]
+  notifications         Notification[]
+  fraudFlagsRaised      FraudFlag[]            @relation("FraudFlagReporter")
+  fraudFlagsReviewed    FraudFlag[]            @relation("FraudFlagReviewer")
+  disputesRaised        Dispute[]              @relation("DisputeReporter")
+  disputesResolved      Dispute[]              @relation("DisputeResolver")
+  encumbrancesCreated   Encumbrance[]          @relation("EncumbranceCreator")
+  transferApprovals     TransferApproval[]
+  createdAt             DateTime               @default(now())
+  updatedAt             DateTime               @updatedAt
+
+  lands                 Land[]                @relation("LandOwner")
+  verifiedLands         Land[]                @relation("LandVerifier")
+  documents             Document[]
+  transfersSent         Transfer[]            @relation("TransferSender")
+  transfersReceived     Transfer[]            @relation("TransferReceiver")
+  transfersApproved     Transfer[]            @relation("TransferApprover")
+  verificationRequests  VerificationRequest[] @relation("VerificationRequester")
+  verificationsReviewed VerificationRequest[] @relation("VerificationReviewer")
+  fractionalOwnerships  FractionalOwnership[]
+  auditLogs             AuditLog[]
+  projects              Project[]
+  refreshTokens         RefreshToken[]
+  siteVisits            SiteVisit[]           @relation("VisitRequester")
+  reviews               Review[]
+  enquiriesSent         Enquiry[]             @relation("EnquirySender")
+  enquiriesReceived     Enquiry[]             @relation("EnquiryReceiver")
+  roleAssignments       UserRoleAssignment[]  @relation("AssignedRoles")
+  rolesGranted          UserRoleAssignment[]  @relation("RoleGrantor")
+  follows               UserFollow[]          @relation("UserFollowing")
+  followers             UserFollow[]          @relation("UserFollowers")
+  SavedLand             SavedLand[]
+}
+
+model UserRoleAssignment {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation("AssignedRoles", fields: [userId], references: [id], onDelete: Cascade)
+  role         Role
+  jurisdiction String?
+  grantedById  String?
+  grantedBy    User?    @relation("RoleGrantor", fields: [grantedById], references: [id], onDelete: SetNull)
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([userId, role])
+  @@index([role, jurisdiction, active])
+}
+
+model UserFollow {
+  id          String   @id @default(cuid())
+  followerId  String
+  follower    User     @relation("UserFollowing", fields: [followerId], references: [id], onDelete: Cascade)
+  followingId String
+  following   User     @relation("UserFollowers", fields: [followingId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+
+  @@unique([followerId, followingId])
+  @@index([followingId])
+}
+
+model Land {
+  id                   String     @id @default(cuid())
+  plotId               String     @unique
+  title                String
+  description          String?
+  state                String
+  district             String
+  village              String
+  surveyNumber         String
+  area                 Float
+  latitude             Float?
+  longitude            Float?
+  status               LandStatus @default(PENDING)
+  ownerWallet          String?
+  ownerId              String?
+  lockTransferId       String?    @unique
+  transferFrozen       Boolean    @default(false)
+  transferFreezeReason String?
+  transferFrozenAt     DateTime?
+  owner                User?      @relation("LandOwner", fields: [ownerId], references: [id])
+  verifiedById         String?
+  verifiedBy           User?      @relation("LandVerifier", fields: [verifiedById], references: [id])
+  verifiedAt           DateTime?
+  blockchainTxHash     String?
+  tokenId              String?
+  metadata             Json?
+  createdAt            DateTime   @default(now())
+  updatedAt            DateTime   @updatedAt
+
+  documents            Document[]
+  transfers            Transfer[]
+  verificationRequests VerificationRequest[]
+  fractionalOwnerships FractionalOwnership[]
+  projects             Project[]             @relation("ProjectLands")
+  siteVisits           SiteVisit[]
+  reviews              Review[]
+  enquiries            Enquiry[]
+  encumbrances         Encumbrance[]
+  disputes             Dispute[]
+  fraudFlags           FraudFlag[]
+  ownershipHistory     OwnershipHistory[]
+  objections           PublicObjection[]
+  savedByUsers         SavedLand[]
+
+  @@index([state, district, village])
+  @@index([title])
+}
+
+model Document {
+  id           String       @id @default(cuid())
+  name         String
+  originalName String
+  mimeType     String
+  size         Int
+  path         String
+  sha256Hash   String
+  ipfsHash     String?
+  documentType DocumentType
+  isVerified   Boolean      @default(false)
+  landId       String?
+  land         Land?        @relation(fields: [landId], references: [id])
+  userId       String
+  user         User         @relation(fields: [userId], references: [id])
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  transfers    Transfer[]   @relation("TransferDocuments")
+}
+
+model Transfer {
+  id                String         @id @default(cuid())
+  idempotencyKey    String?        @unique
+  landId            String
+  land              Land           @relation(fields: [landId], references: [id])
+  fromUserId        String
+  fromUser          User           @relation("TransferSender", fields: [fromUserId], references: [id])
+  toUserId          String?
+  toUser            User?          @relation("TransferReceiver", fields: [toUserId], references: [id])
+  toWalletAddress   String
+  status            TransferStatus @default(INITIATED)
+  sellerSignature   String?
+  buyerVerified     Boolean        @default(false)
+  sellerOtpVerified Boolean        @default(false)
+  escrowRequired    Boolean        @default(true)
+  cooldownEndsAt    DateTime?
+  lockExpiresAt     DateTime?
+  initiatedAt       DateTime       @default(now())
+  approvedAt        DateTime?
+  completedAt       DateTime?
+  approvedById      String?
+  approvedBy        User?          @relation("TransferApprover", fields: [approvedById], references: [id])
+  rejectionReason   String?
+  blockchainTxHash  String?
+  notes             String?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+
+  documents        Document[]         @relation("TransferDocuments")
+  escrow           EscrowAccount?
+  approvals        TransferApproval[]
+  ownershipHistory OwnershipHistory?
+
+  @@index([landId, status])
+  @@index([fromUserId, status])
+}
+
+model IdentityVerification {
+  id           String                     @id @default(cuid())
+  userId       String
+  user         User                       @relation(fields: [userId], references: [id])
+  provider     String
+  reference    String
+  status       IdentityVerificationStatus @default(PENDING)
+  verifiedAt   DateTime?
+  expiresAt    DateTime?
+  linkedWallet String?
+  createdAt    DateTime                   @default(now())
+  updatedAt    DateTime                   @updatedAt
+
+  @@index([userId, status])
+}
+
+model EscrowAccount {
+  id               String       @id @default(cuid())
+  transferId       String       @unique
+  transfer         Transfer     @relation(fields: [transferId], references: [id])
+  amount           Decimal      @db.Decimal(20, 2)
+  currency         String       @default("INR")
+  status           EscrowStatus @default(PENDING)
+  provider         String?
+  depositReference String?
+  fundedAt         DateTime?
+  releasedAt       DateTime?
+  refundedAt       DateTime?
+  refundReference  String?
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+}
+
+model TransferApproval {
+  id         String   @id @default(cuid())
+  transferId String
+  transfer   Transfer @relation(fields: [transferId], references: [id])
+  officerId  String
+  officer    User     @relation(fields: [officerId], references: [id])
+  approved   Boolean
+  notes      String?
+  createdAt  DateTime @default(now())
+
+  @@unique([transferId, officerId])
+}
+
+model Encumbrance {
+  id           String          @id @default(cuid())
+  landId       String
+  land         Land            @relation(fields: [landId], references: [id])
+  type         EncumbranceType
+  authority    String
+  reference    String?
+  documentHash String?
+  startDate    DateTime
+  endDate      DateTime?
+  active       Boolean         @default(true)
+  createdById  String
+  createdBy    User            @relation("EncumbranceCreator", fields: [createdById], references: [id])
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+
+  @@index([landId, active])
+}
+
+model Dispute {
+  id            String        @id @default(cuid())
+  landId        String
+  land          Land          @relation(fields: [landId], references: [id])
+  caseReference String
+  status        DisputeStatus @default(OPEN)
+  description   String
+  raisedById    String
+  raisedBy      User          @relation("DisputeReporter", fields: [raisedById], references: [id])
+  resolvedById  String?
+  resolvedBy    User?         @relation("DisputeResolver", fields: [resolvedById], references: [id])
+  resolution    String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@index([landId, status])
+}
+
+model FraudFlag {
+  id           String        @id @default(cuid())
+  landId       String?
+  land         Land?         @relation(fields: [landId], references: [id])
+  reason       String
+  severity     FraudSeverity @default(MEDIUM)
+  status       DisputeStatus @default(OPEN)
+  reportedById String?
+  reportedBy   User?         @relation("FraudFlagReporter", fields: [reportedById], references: [id])
+  reviewedById String?
+  reviewedBy   User?         @relation("FraudFlagReviewer", fields: [reviewedById], references: [id])
+  resolution   String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@index([status, severity])
+}
+
+model Notification {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id])
+  type      String
+  role      Role?
+  title     String
+  message   String
+  readAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId, readAt])
+}
+
+model OwnershipHistory {
+  id          String    @id @default(cuid())
+  landId      String
+  land        Land      @relation(fields: [landId], references: [id])
+  transferId  String?   @unique
+  transfer    Transfer? @relation(fields: [transferId], references: [id])
+  ownerId     String
+  ownerWallet String?
+  eventType   String
+  eventAt     DateTime  @default(now())
+  txHash      String?
+  metadata    Json?
+
+  @@index([landId, eventAt])
+}
+
+model VerificationRequest {
+  id              String             @id @default(cuid())
+  landId          String
+  land            Land               @relation(fields: [landId], references: [id])
+  requestedById   String
+  requestedBy     User               @relation("VerificationRequester", fields: [requestedById], references: [id])
+  reviewedById    String?
+  reviewedBy      User?              @relation("VerificationReviewer", fields: [reviewedById], references: [id])
+  status          VerificationStatus @default(PENDING)
+  submittedAt     DateTime           @default(now())
+  reviewedAt      DateTime?
+  notes           String?
+  rejectionReason String?
+  createdAt       DateTime           @default(now())
+  updatedAt       DateTime           @updatedAt
+}
+
+model FractionalOwnership {
+  id              String   @id @default(cuid())
+  landId          String
+  land            Land     @relation(fields: [landId], references: [id])
+  userId          String
+  user            User     @relation(fields: [userId], references: [id])
+  sharePercentage Float
+  walletAddress   String
+  acquiredAt      DateTime @default(now())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  action      String
+  actorId     String?
+  actor       User?    @relation(fields: [actorId], references: [id])
+  actorWallet String?
+  targetType  String
+  targetId    String
+  details     Json?
+  ipAddress   String?
+  txHash      String?
+  createdAt   DateTime @default(now())
+}
+
+model Project {
+  id             String        @id @default(cuid())
+  title          String
+  description    String
+  developerId    String
+  developer      User          @relation(fields: [developerId], references: [id])
+  status         ProjectStatus @default(PLANNING)
+  location       String
+  state          String
+  district       String
+  imageUrl       String?
+  coverImageUrl  String?
+  wizardStep     Int           @default(1)
+  infrastructure Json?
+  tags           String[]      @default([])
+  isFeatured     Boolean       @default(false)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  lands Land[] @relation("ProjectLands")
+}
+
+model PublicObjection {
+  id            String    @id @default(cuid())
+  landId        String
+  land          Land      @relation(fields: [landId], references: [id], onDelete: Cascade)
+  submittedById String?
+  name          String
+  email         String
+  reason        String
+  evidenceHash  String?
+  status        String    @default("OPEN")
+  resolution    String?
+  resolvedById  String?
+  resolvedAt    DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([landId, status])
+  @@index([status, createdAt])
+}
+
+model RefreshToken {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model SiteVisit {
+  id          String          @id @default(cuid())
+  landId      String
+  land        Land            @relation(fields: [landId], references: [id])
+  requesterId String?
+  requester   User?           @relation("VisitRequester", fields: [requesterId], references: [id])
+  name        String
+  email       String
+  phone       String?
+  preferredAt DateTime?
+  notes       String?
+  status      SiteVisitStatus @default(REQUESTED)
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+
+  @@index([landId])
+}
+
+model Review {
+  id                String   @id @default(cuid())
+  landId            String
+  land              Land     @relation(fields: [landId], references: [id])
+  authorId          String?
+  author            User?    @relation(fields: [authorId], references: [id])
+  authorName        String
+  rating            Int
+  comment           String
+  isVerifiedVisitor Boolean  @default(false)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([landId])
+}
+
+model Enquiry {
+  id         String        @id @default(cuid())
+  landId     String?
+  land       Land?         @relation(fields: [landId], references: [id])
+  fromUserId String?
+  fromUser   User?         @relation("EnquirySender", fields: [fromUserId], references: [id])
+  toUserId   String?
+  toUser     User?         @relation("EnquiryReceiver", fields: [toUserId], references: [id])
+  name       String
+  email      String
+  phone      String?
+  message    String
+  status     EnquiryStatus @default(NEW)
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+
+  @@index([landId])
+}

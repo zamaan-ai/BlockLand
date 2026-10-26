@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Illustrative mixed-use neighbourhood project">
+  <defs>
+    <linearGradient id="sky" y2="1"><stop stop-color="#8eb4ba"/><stop offset="1" stop-color="#d8d2ad"/></linearGradient>
+    <linearGradient id="city" y2="1"><stop stop-color="#597b73"/><stop offset="1" stop-color="#284a48"/></linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <path d="M0 428q210-132 396-15t369 0 435-22v309H0z" fill="#7c9870"/>
+  <path d="M0 537q234-134 442-22t392-4 366-25v214H0z" fill="#607f61"/>
+  <path d="M0 622q308-122 598-12t602-24v114H0z" fill="#405f50"/>
+  <g fill="url(#city)" stroke="#e0d9b8" stroke-width="5">
+    <path d="M144 346h120v160H144z"/><path d="M290 299h144v202H290z"/><path d="M470 359h112v155H470z"/><path d="M626 271h160v236H626z"/><path d="M829 332h126v174H829z"/>
+  </g>
+  <g fill="#efd99c" opacity=".9"><path d="M168 374h18v24h-18zm45 0h18v24h-18zm99-42h20v26h-20zm53 0h20v26h-20zm123 56h18v22h-18zm37 0h18v22h-18zm143-79h22v28h-22zm58 0h22v28h-22zm131 45h20v24h-20zm44 0h20v24h-20z"/></g>
+  <path d="M-20 568c235-96 386-87 555 7s337 94 687-29" fill="none" stroke="#d6c99b" stroke-width="15" opacity=".8"/>
+  <rect x="34" y="34" width="290" height="42" rx="21" fill="#173331d9"/><text x="58" y="61" fill="#fff" font-family="Arial,sans-serif" font-size="17" letter-spacing="2">ILLUSTRATIVE PROJECT IMAGE</text>
+</svg>
